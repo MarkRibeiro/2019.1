@@ -382,7 +382,7 @@ Processo Filho vai finalizar
 -----------------------------------------------------
 CONCLUSÃO
 Texto com no mínimo 1 parágrafo respondendo à questão e explicando o funcionamento do código feito.
-Sim, é possivel observar os processos executando em paralelo. Pois o comando fork cria um processo filho, e o filho cria um novo processo filho (neto no caso). Os processos possuem identificadores, (P) = Pai - (F) = Filho - (N) = Neto e também o valor de seu pid. Graças a esses identificadores é notável que os programas estão executando ao mesmo tempo. Além disso, cada processo não interfere no valor da variável cont dos outros processos 
+Sim, é possivel observar os processos executando em paralelo. Pois o comando fork cria um processo filho, e o filho cria um novo processo filho (neto no caso). Os processos possuem identificadores, (P) = Pai - (F) = Filho - (N) = Neto e também o valor de seu pid. Graças a esses identificadores é notável que os programas estão executando ao mesmo tempo. Além disso, os processo não interferem no valor da variável cont dos outros processos, pois, na verdade, são programas diferentes. 
 
 -----------------------------------------------------
 QUESTÃO 2) 
@@ -448,4 +448,8 @@ aloMundo
 echo1
 -----------------------------------------------------
 CONCLUSÃO
-Texto com no mínimo 1 parágrafo respondendo à questão e explicando o funcionamento do código feito.
+Resposta da pergunta 1: 
+	Ambos imprimem um texto na tela. Porém o alomundo imprime a partir do que é escrito nos direto na função printf(), enquanto o echo imprime o que é escrito no terminal na hora de executar o programa. Os parametros escritos no terminal são armazenados nos parametros da main, em *argv[] e impressos dentro do programa com a função printf.
+Resposta da pergunta 2:
+	Fizemos os programas aloMundo e echo1 e criamos os executaveis. O programa ex2 possui uma main que recebe argc e *argv[], ou seja, irá receber parametros na hora de executar o programa. O programa cria um processo filho usando fork(). O processo pai usa a função execv, o qual recebe de argv[1] (primeiro parametro na execucao do programa pelo terminal) um programa a ser executado (aloMundo no caso), enquanto o processo filho recebe argv[2] (segundo parametro na execucao do programa pelo terminal) também um programa a ser executado. (echo1 no caso).
+
