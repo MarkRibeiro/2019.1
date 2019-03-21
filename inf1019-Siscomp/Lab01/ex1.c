@@ -1,11 +1,10 @@
 #include<stdio.h>
-#include <sys/types.h> //lib fork
-#include <sys/wait.h> //lib waitpid
-#include <unistd.h> // lib getpid
+#include <sys/types.h> 
+#include <sys/wait.h> 
+#include <unistd.h> 
 
 int status;
 int cont = 0;
-int pid;
 	
 int main ()
 {	
