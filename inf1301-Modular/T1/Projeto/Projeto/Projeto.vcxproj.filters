@@ -14,4 +14,26 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ARVORE.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TESTARV.C">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ARVORE.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GENERICO.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TST_ESPC.H">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="ArcaboucoTeste.lib" />
+  </ItemGroup>
 </Project>

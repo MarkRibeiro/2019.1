@@ -10,6 +10,18 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ARVORE.C" />
+    <ClCompile Include="TESTARV.C" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ARVORE.H" />
+    <ClInclude Include="GENERICO.H" />
+    <ClInclude Include="TST_ESPC.H" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="ArcaboucoTeste.lib" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{051D3724-1F66-4D9E-BAF3-98C5FAF64335}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -45,8 +57,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
