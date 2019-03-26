@@ -1,0 +1,40 @@
+// Script:    TestErro2.script
+// Autor:     Arndt von Staa
+// Data:      25/mar/2019
+// Proposito: 
+//
+
+==Cria a arvore
+=criar 		0 		0
+
+==Insere a esquerda(Raiz)
+=insesq		'a'		0
+
+==Insere a esquerda
+=insesq		'b'		0
+
+==Vai pro pai (0 = tem pai)
+=irpai      0
+
+==Vai para a esquerda
+=iresq 		0
+
+==Vai pro pai (6 = não tem pai)
+=irpai      6		//Como o nó corrente 'b' tem o pai 'a', o comando deveria ser "=irpai	0"
+
+
+==Insere a esquerda
+=insesq		'c'		0
+
+==Insere a esquerda
+=insesq		'd'		0
+
+==Obtem no corrente
+=obter 		'd'		0
+
+==Volta para o pai
+=irpai		0
+
+==Obtem no corrente
+=obter 		'c'		0
+

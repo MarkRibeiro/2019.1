@@ -17,6 +17,7 @@
   <ItemGroup>
     <ClInclude Include="ARVORE.H" />
     <ClInclude Include="GENERICO.H" />
+    <ClInclude Include="LERPARM.H" />
     <ClInclude Include="TST_ESPC.H" />
   </ItemGroup>
   <ItemGroup>
