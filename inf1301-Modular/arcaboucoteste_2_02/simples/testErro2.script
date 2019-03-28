@@ -21,7 +21,7 @@
 
 ==Vai pro pai (6 = não tem pai)
 =irpai      6		//Como o nó corrente 'b' tem o pai 'a', o comando deveria ser "=irpai	0"
-
+=recuperar
 
 ==Insere a esquerda
 =insesq		'c'		0
